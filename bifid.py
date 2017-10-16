@@ -1,3 +1,4 @@
+
 from ciphers import Cipher
 
 
@@ -11,6 +12,8 @@ class Bifid(Cipher):
         '''
         self.mixed = 'DEFKLMQUVXAZBTRCYWGHSPOJN'
         self.coordinates = []
+        self.y_coord = []
+        self.x_coord = []
         self.cipher_coord = (str(self.y_coord) + str(self.x_coord))
         for y in range(1, 6):
             for x in range(1, 6):
